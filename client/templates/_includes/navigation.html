@@ -27,13 +27,11 @@
                             <i class="fa fa-flag fa-fw fa-2x"></i> <span class="hidden-sm hidden-md hidden-lg">&nbsp;Manifest</span>
                         </a>
                     </li>
-                    {{!-- 
-                        <li class="{{isActivePath regex='/service' className='active'}}">
-                            <a href="{{pathFor '/service'}}" data-toggle="tooltip" data-placement="bottom" title="Services" class="color-context-services">
-                                <i class="fa fa-leaf fa-fw fa-2x"></i> <span class="hidden-sm hidden-md hidden-lg">&nbsp;Service</span>
-                            </a>
-                        </li>
-                    --}}
+                    <li class="{{isActivePath regex='/model' className='active'}}">
+                        <a href="{{pathFor '/model'}}" data-toggle="tooltip" data-placement="bottom" title="Model" class="color-context-services">
+                            <i class="fa fa-connectdevelop fa-fw fa-2x"></i> <span class="hidden-sm hidden-md hidden-lg">&nbsp;Model</span>
+                        </a>
+                    </li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                     {{#if currentUser}}

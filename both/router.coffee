@@ -60,9 +60,10 @@ FlowRouter.route '/manifest',
     action: (params) ->
         FlowLayout.render('MasterLayout', { main:'Manifest'})
 
-# FlowRouter.route '/intention',
-#     action: (params) ->
-#         FlowLayout.render('MasterLayout', { main:'Intention'})
+FlowRouter.route '/model',
+    name: 'model'
+    action: (params) ->
+        FlowLayout.render('MasterLayout', { main:'Model'})
 
 
 
