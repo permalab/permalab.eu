@@ -36,14 +36,26 @@
                     --}}
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
+                    {{#if currentUser}}
+                        <li class="dropdown">
+                            <a href="{{pathFor '/profile'}}" class="color-context-default" data-toggle="tooltip" data-placement="bottom" title="Profile"><i class="fa fa-user fa-fw fa-2x"></i> <span class="hidden-sm hidden-md hidden-lg">Profile</span></a>
+                        </li>
+                        <li class="dropdown">
+                            <a href="{{pathFor '/logout'}}" class="color-context-default" data-toggle="tooltip" data-placement="bottom" title="Logout"><i class="fa fa-sign-out fa-fw fa-2x"></i> <span class="hidden-sm hidden-md hidden-lg">Logout</span></a>
+                        </li>
+                    {{else}}
+                        <li class="dropdown">
+                            <a href="{{pathFor '/signin'}}" class="color-context-default" data-toggle="tooltip" data-placement="bottom" title="Sign-in"><i class="fa fa-user fa-fw fa-2x"></i> <span class="hidden-sm hidden-md hidden-lg">Sign-in</span></a>
+                        </li>
+                        <li class="dropdown">
+                            <a href="{{pathFor '/signup'}}" class="color-context-default" data-toggle="tooltip" data-placement="bottom" title="Sign-up"><i class="fa fa-pencil fa-fw fa-2x"></i> <span class="hidden-sm hidden-md hidden-lg">Sign-up</span></a>
+                        </li>
+                    {{/if}}
                     {{!-- 
                         <li class="dropdown">
                             <a href="{{pathFor '/solutions'}}" class="color-context-default" data-toggle="tooltip" data-placement="bottom" title="Labs"><i class="fa fa-book fa-fw fa-2x"></i> <span class="hidden-sm hidden-md hidden-lg">Solutions</span></a>
                         </li>
                     --}}
-                    <li class="dropdown">
-                        <a href="{{pathFor '/profile'}}" class="color-context-default" data-toggle="tooltip" data-placement="bottom" title="Profile"><i class="fa fa-user fa-fw fa-2x"></i> <span class="hidden-sm hidden-md hidden-lg">Login</span></a>
-                    </li>
                 </ul>
             </div>
         </div>
