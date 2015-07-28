@@ -1,0 +1,1 @@
+@UserInvitations = new Mongo.Collection 'userInvitations'

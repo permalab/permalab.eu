@@ -1,0 +1,9 @@
+<template name="Invitation">
+    <div class="container">
+        {{#if hasInvitation}}
+            {{> atForm state="signUp"}}
+        {{else}}
+            You need a valid invitation to sign up
+        {{/if}}
+    </div>
+</template>

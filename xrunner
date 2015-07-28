@@ -1,0 +1,41 @@
+#!/bin/bash
+# A shell script to launch different configurations of the meteor app
+
+# export ROOT_URL=http://tronko.com:3000/
+export MAIL_URL=smtp://we@permalab.eu:Pjs9v9*7@mail.permalab.eu:465/
+
+opt=$1
+case $opt in
+        dev)
+                NODE_OPTIONS='--debug' meteor
+                ;;
+        build)
+                rm -rf .meteor/local/cordova-build
+                meteor build --server https://chat.tronko.com --mobile-settings config/settings.json ../tronko_build
+                ;;
+        deploy)
+                meteor build --architecture=os.linux.x86_64 --server https://chat.tronko.com --mobile-settings config/settings.json ../tronko_deploy
+                ;;
+        ios)
+                meteor run ios --settings config/settings.json --verbose
+                ;;
+        iosd)
+                meteor run ios-device --settings config/settings.json --verbose
+                ;;
+        android)
+                meteor run android --settings config/settings.json --verbose
+                ;;
+        androidd)
+                meteor run android-device --settings config/settings.json --verbose
+                ;;
+        *)
+                echo "Launch shell script utility"
+                echo "Usage: $0 {dev|build|deploy|ios|iosd|android|androidd}"
+                echo "  dev      : Run with node-inspector."
+                echo "  build    : Build."
+                echo "  deploy   : Deploy."
+                echo "  ios      : Run for ios."
+                echo "  iosd     : Run for ios-device."
+                echo "  android  : Run for android."
+                echo "  androidd : Run for android-device."    ;;
+esac

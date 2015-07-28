@@ -1,0 +1,11 @@
+<template name="ProfileDetail">
+    USER DETAIL
+    {{#with user}}
+        {{#with getAvatar this}}
+            <img src="{{url store='large'}}" class="w100 img-responsive img-thumbnail-circle {{#unless ../profile.accepted}}img-thumbnail{{/unless}}" alt="{{../profile.displayname}}">
+        {{/with}}
+        <h4 class="text-center bottom17">
+            {{profile.displayname}}
+        </h4>
+    {{/with}}
+</template>

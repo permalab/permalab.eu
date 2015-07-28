@@ -1,0 +1,4 @@
+[submodule "packages/core"]
+	path = packages/core
+	url = https://github.com/meteor-useraccounts/core.git
+	branch = flow-router-integration

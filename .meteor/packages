@@ -1,0 +1,36 @@
+# Meteor packages used by this project, one per line.
+# Check this file (and the other files in this directory) into your repository.
+#
+# 'meteor add' and 'meteor remove' will edit this file for you,
+# but you can also edit it by hand.
+
+meteor-platform
+# insecure
+
+coffeescript
+less
+
+email
+
+service-configuration
+accounts-base
+useraccounts:bootstrap
+accounts-password
+# accounts-facebook
+
+# routing
+meteorhacks:flow-router
+meteorhacks:flow-layout
+meteorhacks:fast-render
+
+arillo:flow-router-helpers
+
+
+# IMAGES
+cfs:standard-packages
+cfs:gridfs
+cfs:ejson-file
+cfs:graphicsmagick
+
+# Templates server-side
+cmather:handlebars-server

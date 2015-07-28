@@ -1,0 +1,101 @@
+<template name="Profile">
+  <div class="context-collective">
+    <form id="editProfile" class="" action="action">  
+    <div class="container bottom70">
+        <div class="text-center bottom30">
+        <h2>{{currentUser.profile.displayname}}'s profile</h2>  
+        </div>    
+      <div class="col-sm-2 bottom30">
+        {{#with getAvatar currentUser}}
+            {{#if isUploaded}}
+                <img class="bottom10 top15 img-thumbnail" src="{{url store='large'}}">
+            {{else}}
+                {{uploadProgress}}%
+            {{/if}}
+        {{/with}}
+      </div> 
+      <div class="col-sm-3">
+          <div class="form-group">
+            <label for="displayName"><h4>Name</h4></label>
+            <input type="text" class="form-control" id="displayName" placeholder="Enter display name" value="{{currentUser.profile.displayname}}">
+          </div>
+          <div class="form-group">
+            <label for="profilePicture"><h4>Picture upload</h4></label>
+            <input type="file" id="profilePicture" class="js-profilePictureInput">
+            {{!--
+              <p class="help-block">This picture will be shown on the page</p>
+            --}}
+          </div>        
+      </div>
+      <div class="col-sm-1"></div>
+      <div class="col-sm-6">
+          <h4>I want to be part of permalab as a:</h4>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" id="scenarioDesign" {{checkCheckbox 'scenarioDesign'}}> <p>Core member</p>
+            </label>
+          </div> 
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" id="eventDesign" {{checkCheckbox 'eventDesign'}}> <p>Supporter</p>
+            </label>
+          </div>  
+          <h4>Activ in</h4>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" id="scenarioDesign" {{checkCheckbox 'scenarioDesign'}}> <p>Scenario design</p>
+            </label>
+          </div> 
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" id="eventDesign" {{checkCheckbox 'eventDesign'}}> <p>Event design</p>
+            </label>
+          </div>  
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" id="softArchitecture" {{checkCheckbox 'softArchitecture'}}> <p>Soft architecture</p>
+            </label>
+          </div> 
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" id="permacultureDesign" {{checkCheckbox 'permacultureDesign'}}> <p>Permaculture design</p>
+            </label>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" id="solarEcoLowTec" {{checkCheckbox 'solarEcoLowTec'}}> <p>Solar/Eco Low-Tec</p>
+            </label>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" id="education" {{checkCheckbox 'education'}}> <p>Education</p>
+            </label>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" id="facilitation" {{checkCheckbox 'facilitation'}}> <p>Facilitation</p>
+            </label>
+          </div>                            
+      </div>
+      </div>
+      <div class="dotline"></div>
+        <div class="text-center">
+          {{!--
+          <div class="checkbox">
+            <label>
+              <input type="checkbox"> I confirm it is ok to show my picture and name online
+            </label>
+          </div>
+          --}}
+          <span class="js-error-message"></span>
+          <button type="submit" class="btn btn-primary btn-lg">Submit</button>
+         </div> 
+      </form>
+      </div>
+      <div class="dotline"></div>
+
+      <div class="bottom10 top10 text-center">
+         <a href="/"><h4>go back to the main site</h4></a>
+      </div>
+
+</template>
