@@ -34,7 +34,7 @@
 @color-context-intention: #66a69c;
 @color-context-collective: #66a69c;
 @color-context-manifest: #66a69c;
-@color-context-services: #679b74;
+@color-context-services: #66a69c;
 @color-context-default: rgba(255,255,255, 0.4) ;
 @color-neutral-dark: #333;
 
@@ -142,6 +142,12 @@ transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
 }
 
 /// Accord
+.carousel-control:hover, .carousel-control:focus, {
+    color: @color-context-intention;
+}
+a.carousel-control{
+    color: @color-context-intention;
+}
 .carousel-control.right {
     right: 0px;
     left: auto;
@@ -151,9 +157,6 @@ transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
 .carousel-control.left {
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0px, transparent 100%);
     background-repeat: repeat-x;
-}
-.carousel-control:hover, .carousel-control:focus {
-    color: @color-context-intention;
 }
 
 // Navigations
