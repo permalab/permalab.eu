@@ -82,6 +82,13 @@ body {
 	background-color: @color-context-intention;
 	background-image: url("../images/natural_paper.png");
 }
+.context-picture {
+  background-color: none;
+  background-image: url("../images/paradise.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-attachment: scroll;
+}
 // Form 
 
 .at-title h3{
@@ -358,6 +365,15 @@ a.carousel-control{
     padding: 3px 26px 30px;
     text-align: center;
 }
+.minibox {
+    background-color: rgba(255, 255, 255, 0.4);
+    border: 0px solid transparent;
+    display: block;
+    border-radius: 3px;
+    padding: 1px 10px 20px;
+    text-align: center;
+    margin-bottom: 10px;
+}
 .bigiconbox {
     background-color: rgba(255, 255, 255, 0.4);
     font-size: 100px;
@@ -470,16 +486,16 @@ a.list-group-item {
 	color: #FFF;
     background-color: #333;
     border-color: #333;
-    padding: 8px 14px;
+    padding: 9px 20px;
     font-size: 16px;
     line-height: 1.33;
     margin-top: 10px;
     margin-bottom: 10px;
-    border-radius: 6px;
-        border-top-left-radius: 6px;
-        border-top-right-radius: 6px;
-        border-bottom-right-radius: 6px;
-        border-bottom-left-radius: 6px;
+    border-radius: 16px;
+        border-top-left-radius: 16px;
+        border-top-right-radius: 16px;
+        border-bottom-right-radius: 16px;
+        border-bottom-left-radius: 16px;
 }
 .at-social-btn
 {
@@ -497,7 +513,7 @@ a.list-group-item {
 }
 
 .btn-primary {
-    color: #FFF;
+    color: #fff;
     background-color: #333;
     border-color: #333;
         border-top-color: #333;
@@ -515,16 +531,16 @@ a.list-group-item {
     border-color: #444444;
 }
 .btn-lg, .btn-group-lg > .btn {
-    padding: 8px 14px;
+    padding: 9px 20px;
     font-size: 16px;
     line-height: 1.33;
     margin-top: 10px;
     margin-bottom: 10px;
-    border-radius: 6px;
-        border-top-left-radius: 6px;
-        border-top-right-radius: 6px;
-        border-bottom-right-radius: 6px;
-        border-bottom-left-radius: 6px;
+    border-radius: 16px;
+        border-top-left-radius: 16px;
+        border-top-right-radius: 16px;
+        border-bottom-right-radius: 16px;
+        border-bottom-left-radius: 16px;
 }
 .badge {
     background-color: @color-context-default;
@@ -543,7 +559,10 @@ a.list-group-item {
 
 
 
-
+.cornice {
+  border-color: rgba(255, 255, 255, 0.4);
+  border-width:30px;
+}
 .img-thumbnail {
 	border: 1px dashed @color-neutral-dark;
 	border-radius: 0;
@@ -665,6 +684,7 @@ a:hover{
 .bottom30 { margin-bottom:30px; }
 .bottom50 { margin-bottom:50px; }
 .bottom70 { margin-bottom:70px; }
+.bottom400 { margin-bottom:400px; }
 .left10 { margin-left:10px; }
 .left25 { margin-left:25px !important; }
 .right15 { margin-right:15px !important; }
