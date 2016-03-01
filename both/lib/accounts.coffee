@@ -105,8 +105,8 @@ AccountsTemplates.addField
             value: "core"
         }
         {
-            text: "Transition"
-            value: "transition"
+            text: "Labmaker"
+            value: "labmaker"
         }
         {
             text: "Support"
