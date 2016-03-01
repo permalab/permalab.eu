@@ -34,3 +34,4 @@ cfs:graphicsmagick
 
 # Templates server-side
 cmather:handlebars-server
+yasaricli:lightbox
