@@ -7,3 +7,8 @@ Template.Model.events
         e.preventDefault()
         lightbox.open('space', {})
         false
+Template.closeLightbox.events
+    'click .closeLightbox': (e, t) ->   
+        e.preventDefault()     
+        lightbox.close()
+        false
