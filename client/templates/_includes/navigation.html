@@ -32,6 +32,11 @@
                             <i class="fa fa-connectdevelop fa-fw fa-2x"></i> <span class="hidden-sm hidden-md hidden-lg">&nbsp;Model</span>
                         </a>
                     </li>
+                    <li class="{{isActivePath regex='/timeline' className='active'}}">
+                        <a href="{{pathFor '/timeline'}}" data-toggle="tooltip" data-placement="bottom" title="Timeline" class="color-context-services">
+                            <i class="fa fa-connectdevelop fa-fw fa-2x"></i> <span class="hidden-sm hidden-md hidden-lg">&nbsp;Timeline</span>
+                        </a>
+                    </li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                     {{#if currentUser}}
