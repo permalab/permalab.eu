@@ -679,6 +679,7 @@ a:hover{
 .top17 { margin-top:17px !important; }
 .top30 { margin-top:30px !important; }
 .top70 { margin-top:70px !important; }
+.top100 { margin-top:100px !important; }
 .bottom10 { margin-bottom:10px; }
 .bottom15 { margin-bottom:15px; }
 .bottom30 { margin-bottom:30px; }
@@ -720,15 +721,24 @@ a:hover{
 // LIGHTBOX
 #Lightbox {
     position: fixed;
+    overflow-x:scroll;
     top: 0px;
     left: 0px;
     width: 100%;
-    height: 100%;
+    height: -1000px;
     background-color: rgba(255, 255, 255, 0.9);
     z-index: 10;
 }  
 .lightbox-content-style {
-    background-color: rgba(255, 255, 255, 0.4); 
+    background-color: white; 
     color:black; 
   }  
-.js-timeline {height:800px; width: 100%;}
+  // TIMELINE
+.js-timeline {
+  height:600px; 
+  width: 100%;
+}
+#storyjs-timeline .vco-storyjs
+{
+background-color: red;
+}
