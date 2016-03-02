@@ -6,7 +6,7 @@ Template.Model.events
     'click .spaceLightbox': (e, t) ->
         e.preventDefault()
         lightbox.open('space', {})
-        false
+        false   
 Template.closeLightbox.events
     'click .closeLightbox': (e, t) ->   
         e.preventDefault()     
