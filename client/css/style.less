@@ -31,11 +31,12 @@
 	font-style: normal;
 }
 // Colors
-@color-context-intention: #66a69c;
-@color-context-collective: #66a69c;
-@color-context-manifest: #66a69c;
-@color-context-services: #66a69c;
-@color-context-default: #f9f9f9;
+@color-context-intention: #e54b28;
+@color-context-collective: #e54b28;
+@color-context-manifest: #e54b28;
+@color-context-services: #e54b28;
+@color-context-default: #FFF;
+@color-context-dark: black;
 @color-neutral-dark: #333;
 
 
@@ -268,7 +269,7 @@ a.carousel-control{
 			&.color-context-default {
 				@media(max-width:767px) {
 					background-color: @color-context-default;
-				}
+				}        
 			}
 
 		}
@@ -293,8 +294,6 @@ a.carousel-control{
 			&.color-context-default {
 				color: @color-context-default;
 			}
-
-
 		}
 	}
 }
@@ -366,7 +365,6 @@ a.carousel-control{
     text-align: center;
 }
 .minibox {
-    background-color:  @color-context-default;
     border: 0px solid transparent;
     display: block;
     border-radius: 3px;
@@ -568,7 +566,7 @@ a.list-group-item {
 	border-radius: 0;
 }
 a .img-thumbnail {
-	opacity: 0.7;
+	opacity: 0,5;
 
 	&:hover {
 		opacity: 1;
