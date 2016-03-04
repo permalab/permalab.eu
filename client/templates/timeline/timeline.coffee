@@ -1,2 +1,2 @@
 Template.Timeline.onRendered () ->
-    $('.js-timeline').html "<iframe src='http://cdn.knightlab.com/libs/timeline/latest/embed/index.html?source=0ApCq_ttEmJMddFltNGpSWGhjb2dFc0pQeHBBQ216Vmc&font=Bevan-PotanoSans&maptype=toner&lang=en' width='100%' height='100%' frameborder='0'></iframe>"
+    $('.js-timeline').html "<iframe src='http://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=0ApCq_ttEmJMddFltNGpSWGhjb2dFc0pQeHBBQ216Vmc&font=Monda-Megrim&maptype=toner&lang=en&start_at_end=true&initial_zoom=5' width='100%' height='100%' frameborder='0'></iframe>"
