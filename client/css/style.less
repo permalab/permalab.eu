@@ -31,10 +31,10 @@
 	font-style: normal;
 }
 // Colors
-@color-context-intention: #e54b28;
-@color-context-collective: #e54b28;
-@color-context-manifest: #e54b28;
-@color-context-services: #e54b28;
+@color-context-intention: #50b0b5;
+@color-context-collective: #50b0b5;
+@color-context-manifest: #50b0b5;
+@color-context-services: #50b0b5;
 @color-context-default: #FFF;
 @color-context-dark: black;
 @color-neutral-dark: #333;
@@ -581,6 +581,7 @@ a .img-thumbnail {
 
 
 
+
 // Text
 h1 {
   font-family: PraterSansOne-regular;	
@@ -693,7 +694,10 @@ a:hover{
 
 
 
-
+.w15 {
+  width: 15%;
+  margin: 3px;
+}
 .w100 {
 	width: 100%;
 }
@@ -823,13 +827,13 @@ background-color: red;
   margin-top: -12px;
 }
 .cd-timeline-img.cd-picture {
-  background: #75ce66;
+  background: #333;
 }
 .cd-timeline-img.cd-movie {
-  background: #c03b44;
+  background: #333;
 }
 .cd-timeline-img.cd-location {
-  background: #f0ca45;
+  background: #333;
 }
 @media only screen and (min-width: 1170px) {
   .cd-timeline-img {
@@ -913,29 +917,19 @@ background-color: red;
   position: relative;
   margin-left: 60px;
   background: white;
-  border-radius: 0.25em;
+  border-radius: 1.25em;
   padding: 1em;
-  box-shadow: 0 3px 0 #d7e4ed;
 }
 .cd-timeline-content:after {
   content: "";
   display: table;
   clear: both;
 }
-.cd-timeline-content h2 {
-  color: #303e49;
-}
-.cd-timeline-content p, .cd-timeline-content .cd-read-more, .cd-timeline-content .cd-date {
-  font-size: 13px;
-  font-size: 0.8125rem;
-}
+
 .cd-timeline-content .cd-read-more, .cd-timeline-content .cd-date {
   display: inline-block;
 }
-.cd-timeline-content p {
-  margin: 1em 0;
-  line-height: 1.6;
-}
+
 .cd-timeline-content .cd-read-more {
   float: right;
   padding: .8em 1em;
@@ -962,23 +956,13 @@ background-color: red;
   border-right: 7px solid white;
 }
 @media only screen and (min-width: 768px) {
-  .cd-timeline-content h2 {
-    font-size: 20px;
-    font-size: 1.25rem;
-  }
-  .cd-timeline-content p {
-    font-size: 16px;
-    font-size: 1rem;
-  }
   .cd-timeline-content .cd-read-more, .cd-timeline-content .cd-date {
-    font-size: 14px;
-    font-size: 0.875rem;
   }
 }
 @media only screen and (min-width: 1170px) {
   .cd-timeline-content {
     margin-left: 0;
-    padding: 1.6em;
+    padding: 6px 50px 20px 26px;
     width: 45%;
   }
   .cd-timeline-content::before {
@@ -994,9 +978,7 @@ background-color: red;
     position: absolute;
     width: 100%;
     left: 122%;
-    top: 6px;
-    font-size: 16px;
-    font-size: 1rem;
+    top: -20px;
   }
   .cd-timeline-block:nth-child(even) .cd-timeline-content {
     float: right;

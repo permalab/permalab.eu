@@ -1,19 +1,22 @@
 <template name="Users">
     {{#if checkUsers type}}
-        <div class="row">
-            <h2 class="text-center top30">
+        <div class="top30">
+        <div class="row ">
+            <h2 class="text-center top15">
                 {{title}}
             </h2>
-            <div class="col-sm-9">
+            <div class="top30">
                 {{#each users type}}
                     {{>UserListElement}}
                 {{/each}}
             </div>
         </div>
+      </div>  
     {{/if}}
 </template>
+
 <template name="UserListElement">
-    <div class="col-sm-3">
+    <div class="col-sm-2">
         <a href="{{pathFor 'profileDetail' id=this._id}}">
             {{#with getAvatar this}}
                 <img src="{{url store='default'}}" class="w100 img-responsive img-thumbnail-circle {{#unless ../profile.accepted}}img-thumbnail{{/unless}}" alt="{{../profile.displayname}}">
