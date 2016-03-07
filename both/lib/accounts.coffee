@@ -101,8 +101,8 @@ AccountsTemplates.addField
     displayName: "Type of participation"
     select: [
         {
-            text: "Core"
-            value: "core"
+            text: "Spaceholder"
+            value: "spaceholder"
         }
         {
             text: "Labmaker"
