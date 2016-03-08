@@ -11,9 +11,9 @@ Template.Model.events
         e.preventDefault()
         lightbox.open('conscious', {})
         false  
-    'click .cultureLightbox': (e, t) ->
+    'click .permacultureLightbox': (e, t) ->
         e.preventDefault()
-        lightbox.open('culture', {})
+        lightbox.open('permaculture', {})
         false  
     'click .autarchyLightbox': (e, t) ->
         e.preventDefault()
