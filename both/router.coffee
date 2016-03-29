@@ -1,3 +1,8 @@
+trackingTrigger = (context) ->
+    GAnalytics.pageview(context.path)
+
+FlowRouter.triggers.enter([trackingTrigger])
+
 # Not Found
 FlowRouter.notfound =
     action: (params) ->
