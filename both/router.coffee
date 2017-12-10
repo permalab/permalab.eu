@@ -75,6 +75,12 @@ FlowRouter.route '/timeline',
     action: (params) ->
         FlowLayout.render('MasterLayout', { main:'Timeline'})
 
+FlowRouter.route '/lab',
+    name: 'lab'
+    action: (params) ->
+        FlowLayout.render('MasterLayout', { main:'Lab'})
+
+
 
 
 # FlowRouter.route '/service',
